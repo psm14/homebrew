@@ -7,6 +7,7 @@ class Ent < Formula
   md5 '8104a83af1ea5b280da96c92da18eae4'
 
   def install
+    # The Makefile only builds the binary, it must be installed manually
     system "make"
     bin.install "ent"
 
